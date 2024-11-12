@@ -8,4 +8,11 @@ function randomNumbers() {
         const casualNumber = Math.floor(Math.random() * 100) + 1;
         numbers.push(casualNumber);
     } return numbers
-} console.log(randomNumbers());
+}
+
+// crearmi la costante con i numeri generati dalla funzione
+const casNum = randomNumbers();
+
+const numbersList = document.getElementById("numbers-list");
+
+console.log(numbersList);
