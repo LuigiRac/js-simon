@@ -13,6 +13,9 @@ function randomNumbers() {
 // crearmi la costante con i numeri generati dalla funzione
 const casNum = randomNumbers();
 
+// selezionato ul
 const numbersList = document.getElementById("numbers-list");
-
-console.log(numbersList);
+// console.log(numbersList);
+for (let i = 0; i < casNum.length; i++) {
+    const listItems = document.createElement("li");
+}
