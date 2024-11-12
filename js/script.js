@@ -2,8 +2,10 @@
 console.clear()
 
 function randomNumbers() {
-    for (let i = 0; i < array.length; i++) {
-        const casualNumber = Math.floor(Math.random() * 100) + 1;
 
-    }
-}
+    const numbers = [];
+    for (let i = 0; i < 5; i++) {
+        const casualNumber = Math.floor(Math.random() * 100) + 1;
+        numbers.push(casualNumber);
+    } return numbers
+} console.log(randomNumbers());
