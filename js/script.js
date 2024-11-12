@@ -1,6 +1,7 @@
 "use strict"
 console.clear()
 
+// 1. Generare numeri casuali
 function randomNumbers() {
 
     const numbers = [];
@@ -22,3 +23,13 @@ for (let i = 0; i < casNum.length; i++) {
 
     numbersList.appendChild(listItem);
 }
+
+// 2. Countdown
+const countdown = document.getElementById("countdown");
+let countdownTime = 5;
+
+const countdownInterval = setInterval(() => {
+    countdownTime--;
+    countdown.textContent = countdownTime;
+}, 1000);
+
