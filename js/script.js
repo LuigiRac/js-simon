@@ -31,5 +31,8 @@ let countdownTime = 5;
 const countdownInterval = setInterval(() => {
     countdownTime--;
     countdown.textContent = countdownTime;
+    if (countdownTime <= 0) {
+        clearInterval(countdownInterval);
+    }
 }, 1000);
 
