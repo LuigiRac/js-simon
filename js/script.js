@@ -33,6 +33,13 @@ const countdownInterval = setInterval(() => {
     countdown.textContent = countdownTime;
     if (countdownTime <= 0) {
         clearInterval(countdownInterval);
-    }
+        // console.log(numbersList);
+
+        numbersList.style.cssText = "display:none !important";
+        const answerForm = document.getElementById("answers-form");
+        answerForm.style.cssText = "display:block !important";
+    };
 }, 1000);
+
+
 
