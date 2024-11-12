@@ -17,5 +17,8 @@ const casNum = randomNumbers();
 const numbersList = document.getElementById("numbers-list");
 // console.log(numbersList);
 for (let i = 0; i < casNum.length; i++) {
-    const listItems = document.createElement("li");
+    const listItem = document.createElement("li");
+    listItem.textContent = casNum[i];
+
+    numbersList.appendChild(listItem);
 }
