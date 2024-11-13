@@ -28,6 +28,8 @@ for (let i = 0; i < casNum.length; i++) {
 const countdown = document.getElementById("countdown");
 let countdownTime = 5;
 
+const answerForm = document.getElementById("answers-form");
+
 const countdownInterval = setInterval(() => {
     countdownTime--;
     countdown.textContent = countdownTime;
@@ -36,10 +38,21 @@ const countdownInterval = setInterval(() => {
         // console.log(numbersList);
 
         numbersList.style.cssText = "display:none !important";
-        const answerForm = document.getElementById("answers-form");
+
         answerForm.style.cssText = "display:block !important";
     };
 }, 1000);
 
+
+// 3. Validare i numeri
+answerForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const inputNumber = [];
+    const inputElements = document.querySelectorAll("input");
+
+    // console.log(inputElements);
+
+});
 
 
