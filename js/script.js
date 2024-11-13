@@ -52,6 +52,12 @@ answerForm.addEventListener("submit", (event) => {
     const inputElements = document.querySelectorAll("input");
 
     // console.log(inputElements);
+    for (let i = 0; i < inputElements.length; i++) {
+        const inputValue = inputElements[i].value;
+
+        // console.log(inputValue);
+
+    }
 
 });
 
