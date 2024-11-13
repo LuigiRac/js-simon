@@ -53,12 +53,33 @@ answerForm.addEventListener("submit", (event) => {
 
     // console.log(inputElements);
     for (let i = 0; i < inputElements.length; i++) {
-        const inputValue = inputElements[i].value;
-
+        const inputValue = parseInt(inputElements[i].value);
         // console.log(inputValue);
 
+        inputNumber.push(inputValue);
     }
 
+    let correctNumbers = [];
+    let countCorrectNumbers = 0;
+
+    for (let i = 0; i < inputNumber.length; i++) {
+        if (casNum.includes(inputNumber[i])) {
+            countCorrectNumbers++;
+            correctNumbers.push(inputNumber[i]);
+
+
+
+        }
+        console.log(inputNumber[i]);
+        // console.log(casNum);
+        // console.log(inputNumber[i]);
+
+
+    }
+    if (countCorrectNumbers > 0) {
+        const message = document.getElementById("message");
+        message.textContent = "Hai indovinato" + " " + countCorrectNumbers + " numero/i:" + " " + correctNumbers;
+    }
 });
 
 
